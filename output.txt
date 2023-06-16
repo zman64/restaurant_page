@@ -1,0 +1,21 @@
+.
+├── dist
+│   ├── index.html
+│   └── main.js
+├── LICENSE
+├── output.txt
+├── package.json
+├── package-lock.json
+├── README.md
+├── src
+│   ├── font
+│   │   └── triforce-webfont.woff
+│   ├── homePage
+│   │   ├── BotW_Fried_Wild_Greens_Icon.png
+│   │   ├── loadHomePage.js
+│   │   ├── style.css
+│   │   └── triforce.png
+│   └── index.js
+└── webpack.config.js
+
+4 directories, 14 files

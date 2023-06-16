@@ -1,0 +1,11 @@
+.header {
+    background-color: var(--header-background);
+    font-family: var(--font-family);
+    padding: 2em;
+    text-align: center;
+    color: var(--primary-clr);
+}
+
+.header img {
+    height: 50px;
+}

@@ -1,0 +1,9 @@
+{
+    "header": {
+        "welcomeText": "Welcome to Triforce Tavern",
+        "imgAltText": "Triforce Tavern Logo"
+    },
+    "footer": {
+        "copyrightText": "@ 2023 Triforce Tavern. All rights reserved."
+    }
+}

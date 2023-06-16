@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'triforce';
+  src: url('../font/triforce-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+    --primary-clr: #3498db;
+    --secondary-clr: #2ecc71;
+    --font-family: 'triforce', sans-serif;
+    --header-background: #333;
+    --footer-background: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tabs {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.tabs li {
+    padding: 15px;
+    cursor: pointer;
+}
