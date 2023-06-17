@@ -1,17 +1,16 @@
 import './style.css';
 import Icon from './triforce.png';
-import content from '../../content/en.json';
 
-export default function createHeader() {
+export default function createHeader(headerContent) {
     const header = document.createElement('header');
     header.className = 'header';
 
     const headerImage = new Image();
     headerImage.src = Icon;
-    headerImage.alt = content.header.imgAltText;
+    headerImage.alt = headerContent.imgAltText;
 
     const headline = document.createElement('h1');
-    headline.textContent = content.header.welcomeText;
+    headline.textContent = headerContent.welcomeText;
 
     header.appendChild(headerImage);
     header.appendChild(headline);

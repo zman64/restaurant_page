@@ -1,5 +1,7 @@
 .
 ├── dist
+│   ├── 0a3dae4b61dddc813da9.woff
+│   ├── 249ac4ea186bc7447e62.png
 │   ├── index.html
 │   └── main.js
 ├── LICENSE
@@ -8,14 +10,33 @@
 ├── package-lock.json
 ├── README.md
 ├── src
-│   ├── font
-│   │   └── triforce-webfont.woff
-│   ├── homePage
-│   │   ├── BotW_Fried_Wild_Greens_Icon.png
-│   │   ├── loadHomePage.js
-│   │   ├── style.css
-│   │   └── triforce.png
-│   └── index.js
+│   ├── assets
+│   ├── components
+│   │   ├── Footer
+│   │   │   ├── index.js
+│   │   │   └── style.css
+│   │   └── Header
+│   │       ├── index.js
+│   │       ├── style.css
+│   │       └── triforce.png
+│   ├── content
+│   │   └── en.json
+│   ├── index.js
+│   ├── pages
+│   │   ├── Contact
+│   │   │   └── index.js
+│   │   ├── Home
+│   │   │   ├── BotW_Fried_Wild_Greens_Icon.png
+│   │   │   ├── index.js
+│   │   │   └── style.css
+│   │   └── Menu
+│   │       ├── index.js
+│   │       └── style.css
+│   └── shared
+│       ├── font
+│       │   └── triforce-webfont.woff
+│       └── styles
+│           └── global.css
 └── webpack.config.js
 
-4 directories, 14 files
+14 directories, 25 files

@@ -19,13 +19,29 @@
   box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh;
+    display: grid;
+}
+
+#content {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+}
+
 .tabs {
     display: flex;
     list-style-type: none;
     padding: 0;
+    justify-content: center;
 }
 
 .tabs li {
     padding: 15px;
     cursor: pointer;
+}
+
+.tabs li:hover {
+    background-color: var(--primary-clr);
 }
