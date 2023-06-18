@@ -1,7 +1,26 @@
-
-
 /* #region Base */
-body {
-    background-color: gray;
-}
 /* #endregion */
+
+.featured_dish, .visit-us {
+    margin: 2em 0;
+}
+
+.featured_dish h2, .visit_us h2 {
+    font-size: 2rem;
+    color: var(--primary-clr);
+    border-bottom: 2px solid var(--secondary-clr);
+    padding-bottom: 0.5em;
+}
+
+.featured_dish img {
+    max-width: 100%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    margin: 1em 0;
+    background-color: black;
+    /* padding: 1em; */
+}
+
+.featured_dish p, .visit_us p {
+    font-size: 1rem;
+    line-height: 1.5;
+}

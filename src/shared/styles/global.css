@@ -5,9 +5,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'regular';
+  src: url('../font/roboto-regular-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
 :root {
-    --primary-clr: #3498db;
-    --secondary-clr: #2ecc71;
+    --primary-clr: #338033;
+    --secondary-clr: #ffd700;
+    --tertiary-clr: #b8860b;
+    --txt-clr: #333;
     --font-family: 'triforce', sans-serif;
     --header-background: #333;
     --footer-background: #222;
@@ -19,29 +28,62 @@
   box-sizing: border-box;
 }
 
+p {
+    font-family: 'regular', sans-serif ;
+}
+
 body {
     min-height: 100vh;
     display: grid;
+    background-color: #faf3e6;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
 #content {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 .tabs {
     display: flex;
     list-style-type: none;
     padding: 0;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 750px;
+    margin: 0 auto;
 }
 
 .tabs li {
     padding: 15px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .tabs li:hover {
     background-color: var(--primary-clr);
+    color: #fff;
+}
+
+.tab_content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.tab-content {
+    font-family: 'triforce', sans-serif;
+    text-align: center;
+    padding: 1em;
+    color: var(--txt-clr);
+}
+
+.tab_content p {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    
+
 }

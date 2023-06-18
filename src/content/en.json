@@ -7,7 +7,9 @@
         "copyrightText": "@ 2023 Triforce Tavern. All rights reserved."
     },
     "home": {
-        "mainText": "Step into a culinary paradise inspired by the enchanting world of Zelda: Breath of the Wild. Triforce Tavern is a place where adventurers and food lovers can gather to savor dishes made from recipes straight out of the game."
+        "mainText": "Step into a culinary paradise inspired by the enchanting world of Zelda: Breath of the Wild. Triforce Tavern is a place where adventurers and food lovers can gather to savor dishes made from recipes straight out of the game.",
+
+        "dishDescription": "Today’s special is the \"Hearty Wild Greens\" - a magical blend of Hyrule herbs that will invigorate your senses and temporarily increase your maximum hearts. Crafted with fresh ingredients and the touch of our Hyrulean chefs, this dish is a must-try for Zelda enthusiasts and epicureans alike."
     },
     "menu": {
         "mainText": "test and hello"
