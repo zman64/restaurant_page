@@ -61,5 +61,12 @@
             }
         ]
         
-    }
+    },
+    "contact": {
+    "addressHeading": "Our Address",
+    "address": "123 Hyrule Street, Kakariko Village, Hyrule",
+    "hoursHeading": "Opening Hours",
+    "hours": "Monday - Friday: 5:00 PM - 12:00 AM\nSaturday - Sunday: 12:00 PM - 12:00 AM",
+    "formHeading": "Get in Touch"
+  }
 }
