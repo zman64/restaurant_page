@@ -3,6 +3,8 @@ const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 
 module.exports = {
   mode: "production",
@@ -26,33 +28,55 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
-      {
-        test: /\.json$/,
-        loader: 'json-loader',
-        type: 'javascript/auto',
-      },
     ],
   },
   plugins: [
-    new MiniCssExtractPlugin(),
-    new ImageMinimizerPlugin({
-      minimizerOptions: {
-        plugins: [
-          ['gifsicle', { interlaced: true }],
-          ['jpegtran', { progressive: true }],
-          ['optipng', { optimizationLevel: 5 }],
-          ['svgo', { plugins: [{ removeViewBox: false }] }],
-        ],
-      },
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
     }),
+    new MiniCssExtractPlugin(),
   ],
   optimization: {
-    minimize: true,
+    //minimize: true,
     minimizer: [
       new TerserPlugin({
         extractComments: false,
       }),
       new CssMinimizerPlugin(),
+      new ImageMinimizerPlugin({
+        minimizer: {
+          implementation: ImageMinimizerPlugin.imageminMinify,
+          options: {
+          plugins: [
+            ["gifsicle", { interlaced: true }],
+            ["jpegtran", { progressive: true }],
+            ["optipng", { optimizationLevel: 5 }],
+            [
+              "svgo",
+              {
+                plugins: [
+                  {
+                    name: "preset-default",
+                    params: {
+                      overrides: {
+                        removeViewBox: false,
+                        addAttributesToSVGElement: {
+                          params: {
+                            attributes: [
+                              { xmlns: "http://www.w3.org/2000/svg" },
+                            ],
+                          },
+                        },
+                      },
+                    },
+                  },
+                ],
+              },
+            ],
+          ],
+          },
+        },
+      }),
     ],
   },
 };
