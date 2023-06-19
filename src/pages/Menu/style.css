@@ -1,0 +1,71 @@
+.menu {
+    padding: 20px;
+    background-color: #f8f6f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
+}
+
+.menu-section {
+    border: 1px solid gray;
+    padding: 0.5em;
+    /* display: grid; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.menu-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* place-items: center; */
+    align-items: start;
+}
+
+.menu-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.dish-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-title {
+    font-family: 'triforce', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #009688;
+    grid-column: span 2;
+}
+
+.dish-name {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #4CAF50;
+}
+
+.menu-title, .dish-name {
+    background-color: #4caf50;
+    color: gold;
+    padding: 20px;
+    clip-path: polygon(5% 0%, 100% 0, 95% 100%, 0% 100%);
+    text-align: center;
+}
+
+.dish-text {
+    font-family: 'roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    /* width: 50ch; */
+}

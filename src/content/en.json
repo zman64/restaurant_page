@@ -12,6 +12,54 @@
         "dishDescription": "Today’s special is the \"Hearty Wild Greens\" - a magical blend of Hyrule herbs that will invigorate your senses and temporarily increase your maximum hearts. Crafted with fresh ingredients and the touch of our Hyrulean chefs, this dish is a must-try for Zelda enthusiasts and epicureans alike."
     },
     "menu": {
-        "mainText": "test and hello"
+        "mainText": "Our Delicious Menu",
+        "sections": [
+            {
+                "name": "Appetizers",
+                "dishes": [
+                    {
+                        "name": "Hyrule Herb Salad",
+                        "description": "Fresh greens tossed with Hyrule herbs in a light vinaigrette.",
+                        "image": "hyrule_herb_salad.jpg"
+                    },
+                    {
+                        "name": "Fairy Tonic Soup",
+                        "description": "Revitalizing broth made with a blend of magical fairy spices.",
+                        "image": "fairy_tonic_soup.jpg"
+                    }
+                ]
+            },
+            {
+                "name": "Main Courses",
+                "dishes": [
+                    {
+                        "name": "Monster Curry",
+                        "description": "Spicy Goron curry with tender monster meat. Battle the heat!",
+                        "image": "monster_curry.jpg"
+                    },
+                    {
+                        "name": "Zora Sashimi Platter",
+                        "description": "A selection of the finest cuts from Lanayru Sea. So fresh it almost swims.",
+                        "image": "zora_sashimi_platter.jpg"
+                    }
+                ]
+            },
+            {
+                "name": "Desserts",
+                "dishes": [
+                    {
+                        "name": "Kakariko Crepes",
+                        "description": "Light and airy crepes served with Lon Lon Ranch honey.",
+                        "image": "kakariko_crepes.jpg"
+                    },
+                    {
+                        "name": "Gerudo Desert Pudding",
+                        "description": "Rich, creamy pudding with a touch of exotic Gerudo spices.",
+                        "image": "gerudo_desert_pudding.jpg"
+                    }
+                ]
+            }
+        ]
+        
     }
 }

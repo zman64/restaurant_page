@@ -75,7 +75,7 @@ body {
 .tab-content {
     font-family: 'triforce', sans-serif;
     text-align: center;
-    padding: 1em;
+    /* padding: 1em; */
     color: var(--txt-clr);
 }
 
